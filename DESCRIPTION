@@ -9,4 +9,6 @@ Description: This is a toy project.
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: reticulate
+Imports: 
+  reticulate
+RoxygenNote: 7.1.0
