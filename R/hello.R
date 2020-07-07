@@ -5,5 +5,6 @@
 #'
 python_core <- function() {
   reticulate::py_run_string("text = 'Python core working correctly'")
-  print(reticulate::py$text)
+
+  return(reticulate::py$text)
 }
