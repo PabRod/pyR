@@ -1,0 +1,12 @@
+Package: pyR
+Type: Package
+Title: Test Python and R in the same project
+Version: 0.1.0
+Author: Pablo Rodríguez-Sánchez 
+Maintainer: Pablo Rodríguez-Sánchez <p.rodriguez-sanchez@esciencecenter.nl>
+Description: This is a toy project.
+    For didactical purposes only.
+License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: reticulate
