@@ -3,5 +3,7 @@ warnings_are_errors: false
 cache: packages
 r_packages:
   - covr
+before_install:
+  - pip install numpy
 after_success:
   - Rscript -e 'library(covr); codecov()'
