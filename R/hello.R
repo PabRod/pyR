@@ -1,6 +1,5 @@
 #' Check Python core
 #'
-#' @return
 #' @export
 #'
 python_core <- function() {
