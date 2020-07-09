@@ -6,6 +6,8 @@ r_packages:
 before_install:
   - pip install numpy --user
   - git clone https://github.com/PabRod/pendulum
-  - python pendulum/setup.py install --user
+  - cd pendulum
+  - python setup.py install --user
+  - cd ..
 after_success:
   - Rscript -e 'library(covr); codecov()'
