@@ -9,5 +9,6 @@ before_install:
   - cd pendulum
   - python setup.py install --user
   - cd ..
+  - pip list
 after_success:
   - Rscript -e 'library(covr); codecov()'
