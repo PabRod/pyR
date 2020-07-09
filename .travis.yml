@@ -4,6 +4,6 @@ cache: packages
 r_packages:
   - covr
 before_install:
-  - pip install numpy
+  - pip install numpy --user
 after_success:
   - Rscript -e 'library(covr); codecov()'
