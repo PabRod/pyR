@@ -17,3 +17,13 @@ python_core <- function() {
 python_module <- function() {
   return(np$pi) # np is loaded in R/zzz.R#.onLoad
 }
+
+#' Load and use custom Python module
+#'
+#' @export
+#'
+python_custom <- function() {
+  yinit <- c(np$pi, 0)
+
+  derivs <- pndmdl$dpendulum(yinit)
+}
